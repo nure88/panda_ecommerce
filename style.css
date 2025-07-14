@@ -14,13 +14,42 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
-    background-color: green;
+    /* background-color: green; */
     padding: 35px;
  
 }
+
+/* drop down */
+.product-li {
+  position: relative;
+}
+
+.dropdown-nav-items{
+    /* margin: 0; */
+position: absolute;
+top: 40px;
+display: block;
+background-color: beige;
+width: 250px;
+text-align: center;
+box-shadow: rgb(0, 0, 0/15%);
+visibility: hidden;
+}
+.dropdown-nav-items li{
+    transition: 0.5s;
+    margin: 5px 0;
+}
+
+               
+.product-li:hover .dropdown-nav-items{
+visibility: visible;
+}
+/* drop down */
+
+
 .search-parent{
     position: relative;
-    color: #bababa;
+    /* color: #bababa; */
 }
 .search-parent input{
     border-radius: 66px;
@@ -49,7 +78,7 @@ nav ul{
     text-decoration: none;
    /* margin: 30px; */
    font-size: 30px;
-   color: white;
+   /* color: white; */
 }
 
 ul li a:hover{
